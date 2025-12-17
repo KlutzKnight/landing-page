@@ -1,4 +1,4 @@
-/* Universal Resets */
+Universal Resets
 *,
 *::before,
 *::after {
@@ -8,6 +8,8 @@
 * {
     margin: 0;
     padding: 0;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Make all containers flex */
@@ -21,15 +23,28 @@
 /* Set font style, background color and text color to hero (+ header) */
 .header,
 .hero {
-    font-family: 'Roboto', sans-serif;
     background-color: #1F2937;
     color: #F9FAF8;
     padding: 20px 15%;
 }
 
-/* For the information below Hero */
-.information {
-    justify-content: center;
+.image {
+    width: 600px;
+}
+
+/* Override inherited styling to hero links and text */
+.header h2 {
+    font-size: 24px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+}
+
+.hero-text p,
+.links li {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 /* Hero main text on the left make it vertical flex */
@@ -54,22 +69,32 @@ button {
     padding: 0.5em 3em;
 }
 
-.image {
-    width: 600px;
+/* For the information below Hero */
+.information {
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
 }
 
-/* Override inherited styling to hero links and text */
-.header h2 {
-    font-size: 24px;
+.information-heading {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    padding-top: 40px;
+    text-align: center;
 }
 
-.hero-text h1 {
-    font-size: 48px;
+.information div {
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 40px 0 80px;
 }
 
-.hero-text p,
-.links li {
-    font-size: 18px;
-    color: #E5E7EB;
+.information img {
+    border: 5px solid #3882F6;
+    border-radius: 10%;
 }
-
