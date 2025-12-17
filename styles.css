@@ -1,0 +1,75 @@
+/* Universal Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Make all containers flex */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Set font style, background color and text color to hero (+ header) */
+.header,
+.hero {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 20px 15%;
+}
+
+/* For the information below Hero */
+.information {
+    justify-content: center;
+}
+
+/* Hero main text on the left make it vertical flex */
+.hero-text {
+    flex-direction: column;
+    flex: 0 0 50%;
+    padding: 170px 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 5px;
+    border: 0;
+    font-weight: bolder;
+    font-size: 18px;
+    align-self: flex-start;
+    padding: 0.5em 3em;
+}
+
+.image {
+    width: 600px;
+}
+
+/* Override inherited styling to hero links and text */
+.header h2 {
+    font-size: 24px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+}
+
+.hero-text p,
+.links li {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
